@@ -1,0 +1,44 @@
+Problem: 1344. Angle Between Hands of a Clock
+Difficulty: Medium
+
+Approach:
+Calculate the angle made by the hour hand from 12 o'clock.
+
+Each hour contributes 30°.
+
+Each minute contributes an additional 0.5° because the hour hand keeps moving.
+
+Formula:
+
+hourAngle = (hour % 12) * 30 + minutes * 0.5
+Calculate the angle made by the minute hand from 12 o'clock.
+
+Each minute contributes 6°.
+
+Formula:
+
+minuteAngle = minutes * 6
+Find the absolute difference between the two angles:
+
+diff = |hourAngle - minuteAngle|
+Since there are two possible angles between the hands on a circle, return the smaller one:
+
+min(diff, 360 - diff)
+The resulting value is the smallest angle formed between the hour and minute hands.
+
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+Date Solved: 18-06-2026
+
+class Solution {
+public:
+    double angleClock(int hour, int minutes) {
+        double hourAngle = (hour % 12) * 30 + minutes * 0.5;
+        double minuteAngle = minutes * 6;
+
+        double diff = abs(hourAngle - minuteAngle);
+
+        return min(diff, 360 - diff);
+    }
+};
