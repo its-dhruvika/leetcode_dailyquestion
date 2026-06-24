@@ -3,7 +3,6 @@ Difficulty: Medium
 
 Approach:
 Calculate the angle made by the hour hand from 12 o'clock.
-
 Each hour contributes 30°.
 
 Each minute contributes an additional 0.5° because the hour hand keeps moving.
