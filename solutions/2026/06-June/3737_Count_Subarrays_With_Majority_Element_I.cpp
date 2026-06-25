@@ -1,7 +1,6 @@
 /*
 Problem: 3737. Count Subarrays With Majority Element I
 Difficulty: Medium
-
 Approach:
 Approach 1 - Brute Force
 Idea
