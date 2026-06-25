@@ -85,6 +85,8 @@ Date Solved: 25-06-2026
 */
 
 
+SOLUTION :-
+
 class Solution {
 public:
     long long countMajoritySubarrays(vector<int>& nums, int target) {
