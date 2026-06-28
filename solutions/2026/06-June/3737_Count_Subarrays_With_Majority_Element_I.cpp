@@ -6,7 +6,7 @@ Approach 1 - Brute Force
 Idea
 Generate every possible subarray.
 
-Count how many times the target appears.
+Count how many times the target appears
 
 If
 
@@ -46,13 +46,10 @@ others
 Now every subarray has a score.
 
 Positive score
-
 ↓
-
 Target is majority.
 
 This dramatically simplifies the condition.
-
 However,
 
 we still haven't figured out the fastest way to count all positive-sum subarrays.
